@@ -6,8 +6,11 @@ using UnityEngine.UI; //for text
 public class game : MonoBehaviour
 {
 
+	public GameObject coloPanel2;
+
 	// private Renderer rend;
 	private SpriteRenderer rend;
+	private SpriteRenderer rend2;
 	private int number;
 	private int number2;
 	private int curTime = 0;
@@ -41,6 +44,7 @@ public class game : MonoBehaviour
 
     	// Get Sprite renderer for the color tab
        	rend = GetComponent<SpriteRenderer>();
+       	rend2 = coloPanel2.GetComponent<SpriteRenderer>(); 
 
     	// Co routine to start counting time
     	StartCoroutine("LoseTime");
@@ -101,7 +105,7 @@ public class game : MonoBehaviour
 	   	number = Random.Range(1,6);
 	   	number2 = Random.Range(1,6);
 
-
+	   	// Color Panel 1
 	   	if(number == 1)
 	   	{
 	   		rend.color = Color.red;
@@ -122,6 +126,33 @@ public class game : MonoBehaviour
 	   	{
 	   		rend.color = Color.white;
 	   	}
+
+	   	// Color Panel 2
+	   	if(number2 == 1)
+	   	{
+	   		rend2.color = Color.red;
+	   	}
+	   	else if(number2 == 2)
+	   	{
+	   		rend2.color = Color.green;
+	   	}
+	   	else if(number2 == 3)
+	   	{
+	   		rend2.color = Color.cyan;
+	   	}
+	   	else if(number2 == 4)
+	   	{
+	   		rend2.color = Color.yellow;
+	   	}
+	   	else if(number2 == 5)
+	   	{
+	   		rend2.color = Color.white;
+	   	}
+
+
+
+
+
 
 	   	// Spikes show controller
 	   	if(number != 1 && number2 != 1)
