@@ -9,7 +9,7 @@ public class game : MonoBehaviour
 	// private Renderer rend;
 	private SpriteRenderer rend;
 	private int number;
-	// private int number2;
+	private int number2;
 	private int curTime = 0;
 	private int timeRate = 8;
 	private int diff = 0;
@@ -99,6 +99,7 @@ public class game : MonoBehaviour
     {
 		// Random number for platform which is goind to be safe
 	   	number = Random.Range(1,6);
+	   	number2 = Random.Range(1,6);
 
 
 	   	if(number == 1)
@@ -123,29 +124,29 @@ public class game : MonoBehaviour
 	   	}
 
 	   	// Spikes show controller
-	   	if(number != 1)
+	   	if(number != 1 && number2 != 1)
 	   	{	
 	   		redspike.transform.position = new Vector3(redspike.transform.position.x, spikeUp, redspike.transform.position.z);
 	   	}
 
-	   	if(number != 2)
+	   	if(number != 2 && number2 != 2)
 	   	{
 	   		greenspike.transform.position = new Vector3(greenspike.transform.position.x, spikeUp, greenspike.transform.position.z);
 	   	}
 
-	   	if(number != 3)
+	   	if(number != 3 && number2 != 3)
 	   	{
 	   		bluespike.transform.position = new Vector3(bluespike.transform.position.x, spikeUp, bluespike.transform.position.z);
 
 	   	}
 
-	   	if(number != 4)
+	   	if(number != 4 && number2 != 4)
 	   	{
 	   		yellowspike.transform.position = new Vector3(yellowspike.transform.position.x, spikeUp, yellowspike.transform.position.z);
 
 	   	}
 
-	   	if(number != 5)
+	   	if(number != 5 && number2 != 5)
 	   	{
 	   		whitespike.transform.position = new Vector3(whitespike.transform.position.x, spikeUp, whitespike.transform.position.z);
 	   	}
