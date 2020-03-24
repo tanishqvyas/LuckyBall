@@ -20,7 +20,7 @@ public class game : MonoBehaviour
 	public Text score;
 	private int myscore = -1;
 	private float spikeUp = 0.2f;
-	private float spikeDown = -0.382f;
+	private float spikeDown = -0.500f;
 
 	// private float spikeMoveRate = 0.02f;
 	public GameObject redspike;

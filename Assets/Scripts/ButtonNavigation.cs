@@ -26,4 +26,9 @@ public class ButtonNavigation : MonoBehaviour
     {
         SceneManager.LoadScene("howtoplay");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

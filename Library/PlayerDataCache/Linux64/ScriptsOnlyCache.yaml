@@ -47,21 +47,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11350}
+      Script: {instanceID: 11162}
     - Class: 114
-      Script: {instanceID: 11522}
+      Script: {instanceID: 11334}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11976}
+      Script: {instanceID: 11788}
     - Class: 114
-      Script: {instanceID: 12386}
+      Script: {instanceID: 12198}
     - Class: 114
-      Script: {instanceID: 12894}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 13096}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13278}
+      Script: {instanceID: 13090}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -106,21 +106,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11350}
+      Script: {instanceID: 11162}
     - Class: 114
-      Script: {instanceID: 11522}
+      Script: {instanceID: 11334}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11976}
+      Script: {instanceID: 11788}
     - Class: 114
-      Script: {instanceID: 12386}
+      Script: {instanceID: 12198}
     - Class: 114
-      Script: {instanceID: 12894}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 13096}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13278}
+      Script: {instanceID: 13090}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -173,25 +173,25 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11350}
+      Script: {instanceID: 11162}
     - Class: 114
-      Script: {instanceID: 11364}
+      Script: {instanceID: 11176}
     - Class: 114
-      Script: {instanceID: 11522}
+      Script: {instanceID: 11334}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11976}
+      Script: {instanceID: 11788}
     - Class: 114
-      Script: {instanceID: 12196}
+      Script: {instanceID: 12008}
     - Class: 114
-      Script: {instanceID: 12386}
+      Script: {instanceID: 12198}
     - Class: 114
-      Script: {instanceID: 12894}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 13096}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13278}
+      Script: {instanceID: 13090}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -236,21 +236,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11350}
+      Script: {instanceID: 11162}
     - Class: 114
-      Script: {instanceID: 11522}
+      Script: {instanceID: 11334}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11976}
+      Script: {instanceID: 11788}
     - Class: 114
-      Script: {instanceID: 12386}
+      Script: {instanceID: 12198}
     - Class: 114
-      Script: {instanceID: 12894}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 13096}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13278}
+      Script: {instanceID: 13090}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -714,8 +714,8 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 24
   scenePathNames:
-  - Assets/Scenes/gameplay.unity
   - Assets/Scenes/Menu.unity
+  - Assets/Scenes/gameplay.unity
   - Assets/Scenes/howtoplay.unity
   - Assets/Scenes/credits.unity
-  playerPath: /home/tanishq/MAVIS/My games/LuckyBall/myball.x86_64
+  playerPath: /home/tanishq/MAVIS/My games/LuckyBall/Builds/Linux/myball.x86_64
