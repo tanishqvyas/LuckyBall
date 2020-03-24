@@ -14,7 +14,7 @@ public class game : MonoBehaviour
 	private int number;
 	private int number2;
 	private int curTime = 0;
-	private int timeRate = 8;
+	private int timeRate = 7;
 	private int diff = 0;
 	public Text timeLeft;
 	public Text score;
