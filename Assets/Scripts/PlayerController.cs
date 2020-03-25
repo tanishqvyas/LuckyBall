@@ -56,6 +56,8 @@ public class PlayerController : MonoBehaviour
 
         else
         {
+            // play death sound
+            FindObjectOfType<AudioManager>().Play("death");
             StartCoroutine("dead");
         }
     }
@@ -73,9 +75,11 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator dead()
     {
+        
+
         deadMsg.text = "Better Luck Next Time !!";
 
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(5);
 
         SceneManager.LoadScene("Menu");
 

@@ -18,7 +18,7 @@ public class game : MonoBehaviour
 	private int number2;
 	private int number3;
 
-	private Color[] colorArray = {Color.red, Color.green, Color.blue, Color.yellow, Color.white};
+	private Color[] colorArray = {Color.red, Color.green, Color.cyan, Color.yellow, Color.white};
 
 	private int curTime = 0;
 	private int timeRate = 7;
@@ -149,6 +149,10 @@ public class game : MonoBehaviour
 	   	{
 	   		whitespike.transform.position = new Vector3(whitespike.transform.position.x, spikeUp, whitespike.transform.position.z);
 	   	}
+
+	   	// Play sound
+	   	FindObjectOfType<AudioManager>().Play("spikeup");
+
 
 
 	   	StartCoroutine("delay");
