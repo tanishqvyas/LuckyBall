@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -45,10 +45,10 @@ MonoBehaviour:
     y: 30
     width: 1853
     height: 951
-  m_MinSize: {x: 677, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 678, y: 342}
+  m_MaxSize: {x: 12003, y: 8042}
   vertical: 0
-  controlID: 90
+  controlID: 15
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -120,14 +120,14 @@ MonoBehaviour:
     y: 664
     width: 1477
     height: 287
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 13}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 13}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -216,8 +216,8 @@ MonoBehaviour:
     y: 0
     width: 1477
     height: 951
-  m_MinSize: {x: 402, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
+  m_MinSize: {x: 403, y: 342}
+  m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
   controlID: 16
 --- !u!114 &10
@@ -241,8 +241,8 @@ MonoBehaviour:
     y: 0
     width: 1477
     height: 664
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: 17
 --- !u!114 &11
@@ -338,20 +338,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /home/tanishq/MAVIS/My games/LuckyBall
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f0340000
-    m_LastClickedID: 13552
-    m_ExpandedIDs: 00000000e234000000ca9a3b
+    m_SelectedIDs: 00350000
+    m_LastClickedID: 13568
+    m_ExpandedIDs: 00000000f434000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +379,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e2340000
+    m_ExpandedIDs: 00000000f4340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -467,7 +467,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewResizer:
-    m_CachedPref: -151
+    m_CachedPref: 429
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
@@ -504,7 +504,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: ee9cffff029dffff049dffff089dffff0c9dffff109dffffd09dffffe49dffffe69dffffea9dffffee9dfffff29dffffa29effffb69effffb89effffbc9effffc09effffc49effff549fffff689fffff6a9fffff6e9fffff729fffff769fffffe4a0ffff26a1ffff3aa1ffffcea1ffffd2a1ffffdaa1ffffdea1ffff2ea5ffff62a5ffff76a5ffff78a5ffff7ca5ffff80a5ffff84a5ffff28a6ffff64a6ffff78a6ffff7aa6ffff7ea6ffff82a6ffff86a6ffff12a7ffff02a8ffff3ea8ffff52a8ffff54a8ffff58a8ffff5ca8ffff60a8ffffe4a8ffff5ea9ffffdaa9ffffeea9ffff82aaffff86aaffff8aaaffff92aaffffecabffff5cacffff2aaefffff0b0ffff54b1ffffbcb1fffffeb1ffff12b2ffffaab2ffffb2b2ffffbab2ffffc6b2ffff0ab3ffffc0b4ffffa2b5ffff66c4ffff54c5ffffa0c5ffff48c9ffff84c9ffff8ec9ffffbeccfffffcccffff22cfffffb6cfffff7ad0ffff8ed0ffffacd1ffffced2ffffeed3ffff5cd4ffff8ed5ffff56d7ffffbcd8ffffdef6ffffd4f9ffff6efbfffffe4000004a410000527400007c75000090760000fa7a0000d87b0000dc820000ba8300007c910000b0910000ca910000ea910000f2910000c2ac0000ecad0000e8bd000002be000036be00006ec3000040c6000050c6000056cd000066cd000056d0000052d7000052d9000022e0000080e60000deee000040f50000
+      m_ExpandedIDs: 0af8ffff8cf9ffffa0f9ffff38faffff40faffff4cfaffff54faffffa4faffff4efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -520,7 +520,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 4}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -564,9 +564,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.3108127, y: -0.118751764, z: -2469.6274}
+    m_Target: {x: -0.4003018, y: -0.93643177, z: -2470.1118}
     speed: 2
-    m_Value: {x: 2.306655, y: -0.121137366, z: -2469.6272}
+    m_Value: {x: -0.4003018, y: -0.93643177, z: -2470.1118}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -616,9 +616,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 20.244293
+    m_Target: 13.645186
     speed: 2
-    m_Value: 20.230476
+    m_Value: 13.645186
   m_Ortho:
     m_Target: 1
     speed: 2

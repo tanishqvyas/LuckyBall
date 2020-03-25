@@ -7,18 +7,27 @@ public class game : MonoBehaviour
 {
 
 	public GameObject coloPanel2;
+	public GameObject coloPanel3;
 
-	// private Renderer rend;
+	// Renderers for sprites of color panels
 	private SpriteRenderer rend;
 	private SpriteRenderer rend2;
+	private SpriteRenderer rend3;
+
 	private int number;
 	private int number2;
+	private int number3;
+
+	private Color[] colorArray = {Color.red, Color.green, Color.blue, Color.yellow, Color.white};
+
 	private int curTime = 0;
 	private int timeRate = 7;
 	private int diff = 0;
+
 	public Text timeLeft;
 	public Text score;
 	private int myscore = -1;
+	
 	private float spikeUp = 0.2f;
 	private float spikeDown = -0.500f;
 
@@ -44,7 +53,8 @@ public class game : MonoBehaviour
 
     	// Get Sprite renderer for the color tab
        	rend = GetComponent<SpriteRenderer>();
-       	rend2 = coloPanel2.GetComponent<SpriteRenderer>(); 
+       	rend2 = coloPanel2.GetComponent<SpriteRenderer>();
+       	rend3 = coloPanel3.GetComponent<SpriteRenderer>();
 
     	// Co routine to start counting time
     	StartCoroutine("LoseTime");
@@ -104,80 +114,38 @@ public class game : MonoBehaviour
 		// Random number for platform which is goind to be safe
 	   	number = Random.Range(1,6);
 	   	number2 = Random.Range(1,6);
+	   	number3 = Random.Range(1,6);
 
-	   	// Color Panel 1
-	   	if(number == 1)
-	   	{
-	   		rend.color = Color.red;
-	   	}
-	   	else if(number == 2)
-	   	{
-	   		rend.color = Color.green;
-	   	}
-	   	else if(number == 3)
-	   	{
-	   		rend.color = Color.cyan;
-	   	}
-	   	else if(number == 4)
-	   	{
-	   		rend.color = Color.yellow;
-	   	}
-	   	else if(number == 5)
-	   	{
-	   		rend.color = Color.white;
-	   	}
-
-	   	// Color Panel 2
-	   	if(number2 == 1)
-	   	{
-	   		rend2.color = Color.red;
-	   	}
-	   	else if(number2 == 2)
-	   	{
-	   		rend2.color = Color.green;
-	   	}
-	   	else if(number2 == 3)
-	   	{
-	   		rend2.color = Color.cyan;
-	   	}
-	   	else if(number2 == 4)
-	   	{
-	   		rend2.color = Color.yellow;
-	   	}
-	   	else if(number2 == 5)
-	   	{
-	   		rend2.color = Color.white;
-	   	}
-
-
-
-
+	   	// Giving Color panels colors
+	   	rend.color = colorArray[number-1];
+	   	rend2.color = colorArray[number2-1];
+	   	rend3.color = colorArray[number3-1];
 
 
 	   	// Spikes show controller
-	   	if(number != 1 && number2 != 1)
+	   	if(number != 1 && number2 != 1 && number3 != 1)
 	   	{	
 	   		redspike.transform.position = new Vector3(redspike.transform.position.x, spikeUp, redspike.transform.position.z);
 	   	}
 
-	   	if(number != 2 && number2 != 2)
+	   	if(number != 2 && number2 != 2 && number3 != 2)
 	   	{
 	   		greenspike.transform.position = new Vector3(greenspike.transform.position.x, spikeUp, greenspike.transform.position.z);
 	   	}
 
-	   	if(number != 3 && number2 != 3)
+	   	if(number != 3 && number2 != 3 && number3 != 3)
 	   	{
 	   		bluespike.transform.position = new Vector3(bluespike.transform.position.x, spikeUp, bluespike.transform.position.z);
 
 	   	}
 
-	   	if(number != 4 && number2 != 4)
+	   	if(number != 4 && number2 != 4 && number3 != 4)
 	   	{
 	   		yellowspike.transform.position = new Vector3(yellowspike.transform.position.x, spikeUp, yellowspike.transform.position.z);
 
 	   	}
 
-	   	if(number != 5 && number2 != 5)
+	   	if(number != 5 && number2 != 5 && number3 != 5)
 	   	{
 	   		whitespike.transform.position = new Vector3(whitespike.transform.position.x, spikeUp, whitespike.transform.position.z);
 	   	}
