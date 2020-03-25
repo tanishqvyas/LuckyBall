@@ -50,14 +50,14 @@ public class PlayerController : MonoBehaviour
 
             if(Input.GetButtonDown("Jump") && isTouchingGround)
             {
+                FindObjectOfType<AudioManager>().Play("jump");
             	rigidBody.velocity = new Vector2(rigidBody.velocity.x, jump_speed);
             }
         }
 
         else
         {
-            // play death sound
-            FindObjectOfType<AudioManager>().Play("death");
+            
             StartCoroutine("dead");
         }
     }
@@ -66,6 +66,8 @@ public class PlayerController : MonoBehaviour
     {
         if(other.tag == "spike" && isAlive == true)
         {   
+            // play death sound
+            FindObjectOfType<AudioManager>().Play("death");
             isAlive = false;
             rigidBody.velocity = new Vector2(rigidBody.velocity.x, jump_speed);
             // collider.isTrigger == true;
